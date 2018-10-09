@@ -48,6 +48,10 @@ namespace SuperSuitShop.Core.ApplicationService.Implementation
             {
                 return _superSuitShopRepository.DeleteSuperSuit(id);
             }
-        
+
+        public List<SuperSuit> GetFilteredSuits(Filter filter)
+        {
+            return _superSuitShopRepository.ReadAll(filter).ToList();
+        }
     }
 }
