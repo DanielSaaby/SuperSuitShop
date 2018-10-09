@@ -1,9 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SuperSuitShop.Core.DomainService;
 using SuperSuitShop.Core.Entities;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace SuperSuitShop.Infrastructure.Data.Repositories
 {

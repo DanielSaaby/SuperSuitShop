@@ -19,8 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\SuperSuitShop.Core\SuperSuitShop.Core.csproj" />
     <ProjectReference Include="..\SuperSuitShop.Core.Entities\SuperSuitShop.Core.Entities.csproj" />
+    <ProjectReference Include="..\SuperSuitShop.Core\SuperSuitShop.Core.csproj" />
     <ProjectReference Include="..\SuperSuitShop.Infrastructure.Data\SuperSuitShop.Infrastructure.Data.csproj" />
   </ItemGroup>
 

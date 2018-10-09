@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SuperSuitShop\SuperSuitShop.Core.Entities\SuperSuitShop.Core.Entities.csproj" />
+    <ProjectReference Include="..\SuperSuitShop.Core.Entities\SuperSuitShop.Core.Entities.csproj" />
   </ItemGroup>
 
 </Project>
