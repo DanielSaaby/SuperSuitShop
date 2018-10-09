@@ -11,7 +11,7 @@ namespace SuperSuitShop.Core.DomainService
 
         SuperSuit CreateSuperSuit(SuperSuit superSuit);
 
-        IEnumerable<SuperSuit> ReadAll();
+        IEnumerable<SuperSuit> ReadAll(Filter filter = null);
 
         SuperSuit UpdateSuperSuit(SuperSuit superSuit);
 

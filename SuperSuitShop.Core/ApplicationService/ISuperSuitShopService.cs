@@ -16,5 +16,7 @@ namespace SuperSuitShop.Core.ApplicationService
         SuperSuit UpdateSuperSuit(SuperSuit superSuit);
 
         SuperSuit DeleteSuperSuit(int id);
+
+        List<SuperSuit> GetFilteredSuits(Filter filter);
     }
 }

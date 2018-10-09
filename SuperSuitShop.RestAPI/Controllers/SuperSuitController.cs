@@ -21,9 +21,12 @@ namespace SuperSuitShop.RestAPI.Controllers
 
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<SuperSuit>> Get()
+        public ActionResult<IEnumerable<SuperSuit>> Get([FromQuery] Filter filter)
         {
-            return _superSuitService.ReadAll();
+            
+
+            return Ok(_superSuitService.GetFilteredSuits(filter)); 
+                
         }
 
         // GET api/values/5
