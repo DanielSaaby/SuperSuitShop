@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using SuperSuitShop.Core.DomainService;
 using SuperSuitShop.Core.Entities;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace SuperSuitShop.Infrastructure.Data.Repositories
 {
@@ -34,8 +35,17 @@ namespace SuperSuitShop.Infrastructure.Data.Repositories
             throw new System.NotImplementedException();
         }
 
-        public IEnumerable<SuperSuit> ReadAll()
+        public IEnumerable<SuperSuit> ReadAll(Filter filter)
         {
+            if (filter.CurrentPage != 0 && filter.ItemsPrPage != 0)
+            {
+                return _ctx.superSuits
+                .Skip((filter.CurrentPage - 1) * filter.ItemsPrPage)
+                .Take(filter.ItemsPrPage);
+
+                
+            }
+
             return _ctx.superSuits;
         }
 
