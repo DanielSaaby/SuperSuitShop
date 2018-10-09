@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System;
+using Microsoft.EntityFrameworkCore;
 using SuperSuitShop.Core.DomainService;
 using SuperSuitShop.Core.Entities;
 using System.Collections.Generic;
@@ -38,9 +39,20 @@ namespace SuperSuitShop.Infrastructure.Data.Repositories
             return _ctx.superSuits;
         }
 
-        public SuperSuit UpdateSuperSuit(int id)
+        public SuperSuit UpdateSuperSuit(SuperSuit superSuit)
         {
-            throw new System.NotImplementedException();
+            SuperSuit ss = null;
+            try
+            {
+                ss = _ctx.Update(superSuit).Entity;
+                _ctx.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return null;
+            }
+            return ss;
         }
     }
 }

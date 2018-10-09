@@ -39,15 +39,15 @@ namespace SuperSuitShop.Core.ApplicationService.Implementation
                 return _superSuitShopRepository.ReadAll().ToList();
             }
 
-            public SuperSuit UpdateSuperSuit(int id)
+            public SuperSuit UpdateSuperSuit(SuperSuit superSuit)
             {
-                throw new System.NotImplementedException();
+                return _superSuitShopRepository.UpdateSuperSuit(superSuit);
             }
 
             public SuperSuit DeleteSuperSuit(int id)
             {
                 return _superSuitShopRepository.DeleteSuperSuit(id);
             }
-        
+
     }
 }

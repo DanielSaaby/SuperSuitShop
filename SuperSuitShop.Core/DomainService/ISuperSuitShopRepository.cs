@@ -13,7 +13,7 @@ namespace SuperSuitShop.Core.DomainService
 
         IEnumerable<SuperSuit> ReadAll();
 
-        SuperSuit UpdateSuperSuit(int id);
+        SuperSuit UpdateSuperSuit(SuperSuit superSuit);
 
         SuperSuit DeleteSuperSuit(int id);
     }

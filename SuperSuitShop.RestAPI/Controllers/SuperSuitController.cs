@@ -44,7 +44,21 @@ namespace SuperSuitShop.RestAPI.Controllers
         [HttpPut("{id}")]
         public ActionResult<SuperSuit> Put(int id, [FromBody] SuperSuit superSuit)
         {
-            return _superSuitService.UpdateSuperSuit(id);
+            superSuit.Id = id;
+            if (id < 1)
+            {
+                return BadRequest("Id must be lager than zero!");
+            }
+
+            var success = _superSuitService.UpdateSuperSuit(superSuit);
+            if (success != null)
+            {
+                return Ok(success);
+            }
+            else
+            {
+                return NotFound($"No Suit found with id {id}");
+            }
         }
 
         // DELETE api/values/5
