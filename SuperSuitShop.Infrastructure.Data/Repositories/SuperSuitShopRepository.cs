@@ -23,7 +23,9 @@ namespace SuperSuitShop.Infrastructure.Data.Repositories
 
         public SuperSuit DeleteSuperSuit(int id)
         {
-            throw new System.NotImplementedException();
+            var superSuitRemoved = _ctx.Remove(new SuperSuit {Id = id}).Entity;
+            _ctx.SaveChanges();
+            return superSuitRemoved;
         }
 
         public SuperSuit NewSuperSuit(string name, string type, double price, string description)
