@@ -1,8 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SuperSuitShop.Core.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace SuperSuitShop.Infrastructure.Data
 {
@@ -19,7 +16,7 @@ namespace SuperSuitShop.Infrastructure.Data
                 //Write Relations between models
             }
 
-            public DbSet<SuperSuit> superSuits { get; set; }
+            public DbSet<SuperSuit> SuperSuits { get; set; }
         }
     
 }

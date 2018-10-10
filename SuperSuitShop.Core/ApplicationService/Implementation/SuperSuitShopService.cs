@@ -1,10 +1,8 @@
 ﻿using SuperSuitShop.Core.DomainService;
 using SuperSuitShop.Core.Entities;
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 
 namespace SuperSuitShop.Core.ApplicationService.Implementation
 {

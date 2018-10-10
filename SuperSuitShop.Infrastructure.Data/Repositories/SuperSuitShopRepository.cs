@@ -39,19 +39,19 @@ namespace SuperSuitShop.Infrastructure.Data.Repositories
         {
             if (filter.CurrentPage != 0 && filter.ItemsPrPage != 0)
             {
-                return _ctx.superSuits
+                return _ctx.SuperSuits
                 .Skip((filter.CurrentPage - 1) * filter.ItemsPrPage)
                 .Take(filter.ItemsPrPage);
 
                 
             }
 
-            return _ctx.superSuits;
+            return _ctx.SuperSuits;
         }
 
         public SuperSuit ReadById(int id)
         {
-            return _ctx.superSuits.FirstOrDefault(ss => ss.Id == id);
+            return _ctx.SuperSuits.FirstOrDefault(ss => ss.Id == id);
         }
 
         public SuperSuit UpdateSuperSuit(SuperSuit superSuit)

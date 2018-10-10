@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SuperSuitShop.Core.Entities
+﻿namespace SuperSuitShop.Core.Entities
 {
     public class Filter
     {

@@ -1,18 +1,15 @@
 ﻿using SuperSuitShop.Core.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace SuperSuitShop.Infrastructure.Data
 {
-    public class DBInitializer
+    public class DbInitializer
     {
-        public static void SeedDB(SuperSuitShopContext ctx)
+        public static void SeedDb(SuperSuitShopContext ctx)
         {
             ctx.Database.EnsureDeleted();
             ctx.Database.EnsureCreated();
 
-            var superSuit1 = ctx.superSuits.Add(new SuperSuit()
+            var superSuit1 = ctx.SuperSuits.Add(new SuperSuit()
             {
 
                 Name = "Captain America Suit",
@@ -21,7 +18,7 @@ namespace SuperSuitShop.Infrastructure.Data
                 Description = "Blue, White, Red"
             });
 
-            var superSuit2 = ctx.superSuits.Add(new SuperSuit()
+            var superSuit2 = ctx.SuperSuits.Add(new SuperSuit()
             {
 
                 Name = "Spiderman Suit",
@@ -30,7 +27,7 @@ namespace SuperSuitShop.Infrastructure.Data
                 Description = "Blue, White, Red"
             });
 
-            var superSuit3 = ctx.superSuits.Add(new SuperSuit()
+            var superSuit3 = ctx.SuperSuits.Add(new SuperSuit()
             {
 
                 Name = "Ironman Suit",
@@ -39,7 +36,7 @@ namespace SuperSuitShop.Infrastructure.Data
                 Description = "Blue, White, Red"
             });
 
-            var superSuit4 = ctx.superSuits.Add(new SuperSuit()
+            var superSuit4 = ctx.SuperSuits.Add(new SuperSuit()
             {
 
                 Name = "Hulk Skin",
@@ -48,7 +45,7 @@ namespace SuperSuitShop.Infrastructure.Data
                 Description = "Blue, White, Red"
             });
 
-            var superSuit5 = ctx.superSuits.Add(new SuperSuit()
+            var superSuit5 = ctx.SuperSuits.Add(new SuperSuit()
             {
 
                 Name = "Thor Suit",
@@ -57,7 +54,7 @@ namespace SuperSuitShop.Infrastructure.Data
                 Description = "Blue, White, Red"
             });
 
-            var superSuit6 = ctx.superSuits.Add(new SuperSuit()
+            var superSuit6 = ctx.SuperSuits.Add(new SuperSuit()
             {
 
                 Name = "Loke Suit",
@@ -66,7 +63,7 @@ namespace SuperSuitShop.Infrastructure.Data
                 Description = "Blue, White, Red"
             });
 
-            var superSuit7 = ctx.superSuits.Add(new SuperSuit()
+            var superSuit7 = ctx.SuperSuits.Add(new SuperSuit()
             {
 
                 Name = "Thanos Suit",
@@ -75,7 +72,7 @@ namespace SuperSuitShop.Infrastructure.Data
                 Description = "Blue, White, Red"
             });
 
-            var superSuit8 = ctx.superSuits.Add(new SuperSuit()
+            var superSuit8 = ctx.SuperSuits.Add(new SuperSuit()
             {
 
                 Name = "Wonder Woman Suit",
@@ -84,7 +81,7 @@ namespace SuperSuitShop.Infrastructure.Data
                 Description = "Blue, White, Red"
             });
 
-            var superSuit9 = ctx.superSuits.Add(new SuperSuit()
+            var superSuit9 = ctx.SuperSuits.Add(new SuperSuit()
             {
 
                 Name = "Black Widow Suit",
@@ -93,7 +90,7 @@ namespace SuperSuitShop.Infrastructure.Data
                 Description = "Blue, White, Red"
             });
 
-            var superSuit10 = ctx.superSuits.Add(new SuperSuit()
+            var superSuit10 = ctx.SuperSuits.Add(new SuperSuit()
             {
 
                 Name = "Batman Suit",
@@ -102,7 +99,7 @@ namespace SuperSuitShop.Infrastructure.Data
                 Description = "Blue, White, Red"
             });
 
-            var superSuit11 = ctx.superSuits.Add(new SuperSuit()
+            var superSuit11 = ctx.SuperSuits.Add(new SuperSuit()
             {
 
                 Name = "Catwoman Suit",
@@ -111,7 +108,7 @@ namespace SuperSuitShop.Infrastructure.Data
                 Description = "Blue, White, Red"
             });
 
-            var superSuit12 = ctx.superSuits.Add(new SuperSuit()
+            var superSuit12 = ctx.SuperSuits.Add(new SuperSuit()
             {
 
                 Name = "Black Panther Suit",
@@ -120,7 +117,7 @@ namespace SuperSuitShop.Infrastructure.Data
                 Description = "Blue, White, Red"
             });
 
-            var superSuit13 = ctx.superSuits.Add(new SuperSuit()
+            var superSuit13 = ctx.SuperSuits.Add(new SuperSuit()
             {
 
                 Name = "Doctor Strange Suit",
@@ -129,7 +126,7 @@ namespace SuperSuitShop.Infrastructure.Data
                 Description = "Blue, White, Red"
             });
 
-            var superSuit14 = ctx.superSuits.Add(new SuperSuit()
+            var superSuit14 = ctx.SuperSuits.Add(new SuperSuit()
             {
 
                 Name = "Star Lord Suit",
@@ -138,7 +135,7 @@ namespace SuperSuitShop.Infrastructure.Data
                 Description = "Blue, White, Red"
             });
 
-            var superSuit15 = ctx.superSuits.Add(new SuperSuit()
+            var superSuit15 = ctx.SuperSuits.Add(new SuperSuit()
             {
 
                 Name = "Groot Suit",
@@ -147,7 +144,7 @@ namespace SuperSuitShop.Infrastructure.Data
                 Description = "Blue, White, Red"
             });
 
-            var superSuit16 = ctx.superSuits.Add(new SuperSuit()
+            var superSuit16 = ctx.SuperSuits.Add(new SuperSuit()
             {
 
                 Name = "Rocket Suit",
@@ -156,7 +153,7 @@ namespace SuperSuitShop.Infrastructure.Data
                 Description = "Blue, White, Red"
             });
 
-            var superSuit17 = ctx.superSuits.Add(new SuperSuit()
+            var superSuit17 = ctx.SuperSuits.Add(new SuperSuit()
             {
 
                 Name = "Gamora Suit",
@@ -165,7 +162,7 @@ namespace SuperSuitShop.Infrastructure.Data
                 Description = "Blue, White, Red"
             });
 
-            var superSuit18 = ctx.superSuits.Add(new SuperSuit()
+            var superSuit18 = ctx.SuperSuits.Add(new SuperSuit()
             {
 
                 Name = "Drax Suit",
@@ -174,7 +171,7 @@ namespace SuperSuitShop.Infrastructure.Data
                 Description = "Blue, White, Red"
             });
 
-            var superSuit19 = ctx.superSuits.Add(new SuperSuit()
+            var superSuit19 = ctx.SuperSuits.Add(new SuperSuit()
             {
 
                 Name = "Clint Barton Suit",
@@ -183,7 +180,7 @@ namespace SuperSuitShop.Infrastructure.Data
                 Description = "Blue, White, Red"
             });
 
-            var superSuit20 = ctx.superSuits.Add(new SuperSuit()
+            var superSuit20 = ctx.SuperSuits.Add(new SuperSuit()
             {
 
                 Name = "Nick Fury Suit",

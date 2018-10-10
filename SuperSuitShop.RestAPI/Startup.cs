@@ -17,11 +17,11 @@ namespace SuperSuitShop.RestAPI
     {
         private IConfiguration Configuration { get; }
 
-        private IHostingEnvironment _env { get; set; }
+        private IHostingEnvironment Env { get; set; }
 
         public Startup(IHostingEnvironment env)
         {
-            _env = env;
+            Env = env;
             var builder = new ConfigurationBuilder()
 
                 .SetBasePath(env.ContentRootPath)
@@ -34,12 +34,12 @@ namespace SuperSuitShop.RestAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            if (_env.IsDevelopment())
+            if (Env.IsDevelopment())
             {
                 services.AddDbContext<SuperSuitShopContext>(
                     opt => opt.UseSqlite("Data Source=SuperShop.DB"));
             }
-            else if (_env.IsProduction())
+            else if (Env.IsProduction())
             {
                 services.AddDbContext<SuperSuitShopContext>(
                     opt => opt
@@ -72,7 +72,7 @@ namespace SuperSuitShop.RestAPI
                 using (var scope = app.ApplicationServices.CreateScope())
                 {
                     var ctx = scope.ServiceProvider.GetService<SuperSuitShopContext>();
-                    DBInitializer.SeedDB(ctx);
+                    DbInitializer.SeedDb(ctx);
                 }
             }
             else
