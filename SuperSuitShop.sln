@@ -17,6 +17,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperSuitShop.Core", "Super
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperSuitShop.Core.Entities", "SuperSuitShop.Core.Entities\SuperSuitShop.Core.Entities.csproj", "{57031FCB-E71D-4E34-8597-EE654CF8B347}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{CD1A677C-5B96-4362-BB21-5A5111BFDAC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperSuitShop.Core.Test", "SuperSuitShop.Core.Test\SuperSuitShop.Core.Test.csproj", "{16D0AF03-6496-4BA1-B829-F14DD0CF190A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,10 @@ Global
 		{57031FCB-E71D-4E34-8597-EE654CF8B347}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57031FCB-E71D-4E34-8597-EE654CF8B347}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57031FCB-E71D-4E34-8597-EE654CF8B347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16D0AF03-6496-4BA1-B829-F14DD0CF190A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16D0AF03-6496-4BA1-B829-F14DD0CF190A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16D0AF03-6496-4BA1-B829-F14DD0CF190A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16D0AF03-6496-4BA1-B829-F14DD0CF190A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +56,7 @@ Global
 		{8AA8CFE9-0281-4ECE-AE37-7C58B06B3570} = {76FD0469-C918-46D1-9EB1-3060AE3339DD}
 		{E612E353-F0DB-4BA0-8905-5DDB63AFB8E4} = {4794B346-219D-401A-8948-5AAD7BC78FC7}
 		{57031FCB-E71D-4E34-8597-EE654CF8B347} = {4794B346-219D-401A-8948-5AAD7BC78FC7}
+		{16D0AF03-6496-4BA1-B829-F14DD0CF190A} = {CD1A677C-5B96-4362-BB21-5A5111BFDAC7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0F148F9F-5145-44D2-B336-59CDE5F65166}

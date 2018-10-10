@@ -2,6 +2,7 @@
 using SuperSuitShop.Core.Entities;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -31,7 +32,16 @@ namespace SuperSuitShop.Core.ApplicationService.Implementation
 
             public SuperSuit CreateSuperSuit(SuperSuit superSuit)
             {
-                return _superSuitShopRepository.CreateSuperSuit(superSuit);
+                if (superSuit.Price > 0)
+                {
+                    return _superSuitShopRepository.CreateSuperSuit(superSuit);
+                }
+                else
+                {
+                    throw new InvalidDataException("To create SuperSuit you need a Price");
+                }
+
+                
             }
 
             public List<SuperSuit> ReadAll()
@@ -55,5 +65,9 @@ namespace SuperSuitShop.Core.ApplicationService.Implementation
             return _superSuitShopRepository.ReadAll(filter).ToList();
         }
 
+        public SuperSuit ReadById(int id)
+        {
+            return _superSuitShopRepository.ReadById(id);
+        }
     }
 }

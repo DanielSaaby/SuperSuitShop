@@ -49,6 +49,11 @@ namespace SuperSuitShop.Infrastructure.Data.Repositories
             return _ctx.superSuits;
         }
 
+        public SuperSuit ReadById(int id)
+        {
+            return _ctx.superSuits.FirstOrDefault(ss => ss.Id == id);
+        }
+
         public SuperSuit UpdateSuperSuit(SuperSuit superSuit)
         {
             SuperSuit ss = null;

@@ -16,5 +16,7 @@ namespace SuperSuitShop.Core.DomainService
         SuperSuit UpdateSuperSuit(SuperSuit superSuit);
 
         SuperSuit DeleteSuperSuit(int id);
+
+        SuperSuit ReadById(int id);
     }
 }
