@@ -33,7 +33,7 @@ namespace SuperSuitShop.RestAPI.Controllers
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
-            return "value";
+            return "not implemented";
         }
 
         // POST api/values
