@@ -33,11 +33,13 @@ namespace SuperSuitShop.RestAPI.Controllers
         [HttpGet("{id}")]
         public ActionResult<SuperSuit> Get(int id)
         {
+
             if (id < 1)
             {
                 return BadRequest("Id must be greater than 0");
             }
             return _superSuitService.ReadById(id);
+
         }
 
         // POST api/values
