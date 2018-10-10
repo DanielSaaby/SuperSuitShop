@@ -34,6 +34,8 @@ namespace SuperSuitShop.RestAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //services.AddCors();
+
             if (Env.IsDevelopment())
             {
                 services.AddDbContext<SuperSuitShopContext>(
@@ -57,7 +59,7 @@ namespace SuperSuitShop.RestAPI
 
             services.AddCors(options =>
             {
-                options.AddPolicy("AllowSpecificOrigin",
+                options.AddPolicy("AllowAll",
                     builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             });
 
@@ -85,9 +87,10 @@ namespace SuperSuitShop.RestAPI
                 app.UseHsts();
             }
 
+            app.UseCors("AllowAll");
             app.UseHttpsRedirection();
             app.UseMvc();
-            app.UseCors("AllowSpecificOrigin");                  
+                          
         }
     }
 }
