@@ -15,5 +15,7 @@ namespace SuperSuitShop.Core.Entities
         public double Price { get; set; }
 
         public String Description { get; set; }
+
+        public String ImageUrl { get; set; }
     }
 }

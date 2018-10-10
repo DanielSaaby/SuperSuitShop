@@ -7,7 +7,6 @@ using System.Text;
 namespace SuperSuitShop.Infrastructure.Data
 {
     
-    
         public class SuperSuitShopContext : DbContext
         {
             public SuperSuitShopContext(DbContextOptions<SuperSuitShopContext> opt) : base(opt)
